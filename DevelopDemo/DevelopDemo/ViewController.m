@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewController1.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    
+}
+- (IBAction)click:(id)sender {
+    [self presentViewController:[ViewController1 new] animated:YES completion:nil];
 }
 
 

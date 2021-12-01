@@ -14,9 +14,15 @@
 		BC3BFC212757AA0200923977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3BFC202757AA0200923977 /* Assets.xcassets */; };
 		BC3BFC242757AA0200923977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3BFC222757AA0200923977 /* LaunchScreen.storyboard */; };
 		BC3BFC272757AA0200923977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BFC262757AA0200923977 /* main.m */; };
+		BC3BFC312757ACB200923977 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BFC302757ACB200923977 /* ViewController1.m */; };
+		BC3BFC372757B2AD00923977 /* But.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3BFC362757B2AD00923977 /* But.m */; };
+		CA7D6F8A8E4238E3D245B25B /* libPods-DevelopDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422BE637A8A7706007BA60F4 /* libPods-DevelopDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A90C1598F9EA78FF8241115 /* Pods-DevelopDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevelopDemo.release.xcconfig"; path = "Target Support Files/Pods-DevelopDemo/Pods-DevelopDemo.release.xcconfig"; sourceTree = "<group>"; };
+		422BE637A8A7706007BA60F4 /* libPods-DevelopDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevelopDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB90253A5ED90C5BC556A25 /* Pods-DevelopDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevelopDemo.debug.xcconfig"; path = "Target Support Files/Pods-DevelopDemo/Pods-DevelopDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BC3BFC112757AA0000923977 /* DevelopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3BFC142757AA0000923977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC3BFC152757AA0000923977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +35,11 @@
 		BC3BFC232757AA0200923977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3BFC252757AA0200923977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC3BFC262757AA0200923977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC3BFC2F2757ACB200923977 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		BC3BFC302757ACB200923977 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		BC3BFC332757AFAE00923977 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BC3BFC352757B2AD00923977 /* But.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = But.h; sourceTree = "<group>"; };
+		BC3BFC362757B2AD00923977 /* But.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = But.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7D6F8A8E4238E3D245B25B /* libPods-DevelopDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A237D635836A90A506CE14E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				422BE637A8A7706007BA60F4 /* libPods-DevelopDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5014F3DCB335F6A0573EEC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFB90253A5ED90C5BC556A25 /* Pods-DevelopDemo.debug.xcconfig */,
+				0A90C1598F9EA78FF8241115 /* Pods-DevelopDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC3BFC082757AA0000923977 = {
 			isa = PBXGroup;
 			children = (
 				BC3BFC132757AA0000923977 /* DevelopDemo */,
 				BC3BFC122757AA0000923977 /* Products */,
+				A5014F3DCB335F6A0573EEC3 /* Pods */,
+				A237D635836A90A506CE14E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +92,14 @@
 		BC3BFC132757AA0000923977 /* DevelopDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC3BFC2D2757AC7C00923977 /* 按钮类效果 */,
 				BC3BFC142757AA0000923977 /* AppDelegate.h */,
 				BC3BFC152757AA0000923977 /* AppDelegate.m */,
 				BC3BFC172757AA0000923977 /* SceneDelegate.h */,
 				BC3BFC182757AA0000923977 /* SceneDelegate.m */,
 				BC3BFC1A2757AA0000923977 /* ViewController.h */,
 				BC3BFC1B2757AA0000923977 /* ViewController.m */,
+				BC3BFC332757AFAE00923977 /* PrefixHeader.pch */,
 				BC3BFC1D2757AA0000923977 /* Main.storyboard */,
 				BC3BFC202757AA0200923977 /* Assets.xcassets */,
 				BC3BFC222757AA0200923977 /* LaunchScreen.storyboard */,
@@ -76,6 +109,33 @@
 			path = DevelopDemo;
 			sourceTree = "<group>";
 		};
+		BC3BFC2D2757AC7C00923977 /* 按钮类效果 */ = {
+			isa = PBXGroup;
+			children = (
+				BC3BFC2E2757AC9800923977 /* 发光的按钮 */,
+				BC3BFC342757B26700923977 /* 弹出式按钮 */,
+			);
+			path = "按钮类效果";
+			sourceTree = "<group>";
+		};
+		BC3BFC2E2757AC9800923977 /* 发光的按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				BC3BFC2F2757ACB200923977 /* ViewController1.h */,
+				BC3BFC302757ACB200923977 /* ViewController1.m */,
+			);
+			path = "发光的按钮";
+			sourceTree = "<group>";
+		};
+		BC3BFC342757B26700923977 /* 弹出式按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				BC3BFC352757B2AD00923977 /* But.h */,
+				BC3BFC362757B2AD00923977 /* But.m */,
+			);
+			path = "弹出式按钮";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +143,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC3BFC2A2757AA0200923977 /* Build configuration list for PBXNativeTarget "DevelopDemo" */;
 			buildPhases = (
+				6EDFACE17F767C5C4937E317 /* [CP] Check Pods Manifest.lock */,
 				BC3BFC0D2757AA0000923977 /* Sources */,
 				BC3BFC0E2757AA0000923977 /* Frameworks */,
 				BC3BFC0F2757AA0000923977 /* Resources */,
@@ -140,13 +201,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EDFACE17F767C5C4937E317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DevelopDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC3BFC0D2757AA0000923977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3BFC312757ACB200923977 /* ViewController1.m in Sources */,
 				BC3BFC1C2757AA0000923977 /* ViewController.m in Sources */,
 				BC3BFC162757AA0000923977 /* AppDelegate.m in Sources */,
+				BC3BFC372757B2AD00923977 /* But.m in Sources */,
 				BC3BFC272757AA0200923977 /* main.m in Sources */,
 				BC3BFC192757AA0000923977 /* SceneDelegate.m in Sources */,
 			);
@@ -288,11 +376,13 @@
 		};
 		BC3BFC2B2757AA0200923977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB90253A5ED90C5BC556A25 /* Pods-DevelopDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYYH624N6Z;
+				GCC_PREFIX_HEADER = DevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = DevelopDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,11 +396,13 @@
 		};
 		BC3BFC2C2757AA0200923977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A90C1598F9EA78FF8241115 /* Pods-DevelopDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XYYH624N6Z;
+				GCC_PREFIX_HEADER = DevelopDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = DevelopDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
